@@ -33,15 +33,21 @@ for (let item of array2) {
 let array3= [1, 2, 3, 4, 5];
 let sum = 0;
 
-for (let i = 0; i < array3.length; i++){sum += array3[i]} 
+for (let item of array3) {
+    // sum = sum + item;
+    sum += item;
+}
 console.log(sum);
+
 
 
 // დავალება-5
 let array4= [1, 2, 3, 4, 5];
 let sum1 = 0;
 
-for (let i = 0; i < array4.length; i++){sum1 += array4[i] / 5} 
+for (let item of array4) {
+    sum1 += item / array4.length ;
+}
 console.log(sum1);
 
 
@@ -106,9 +112,9 @@ let users = [
     {username: 'anna', status: true}
 ]
 
-for (element of users){
-    if (element.status == true) {
-        console.log(element);
+for (let el of users) {
+    if (el.status === true) {
+        console.log(el);
     }
 }
 
@@ -129,7 +135,6 @@ for (let item of array7) {
 let array8 = [ [2, -3, 5, 11], [1, -35, -11], [12, -36, -24] ];
 
 for (let element of array8){
-    console.log(element);
     for (let item of element){
         if (item > 0) {
             console.log(item);
